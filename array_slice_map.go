@@ -10,6 +10,18 @@ func slice_basic() []int8 {
 	return slice
 }
 
+func slice_with_map() []interface{} {
+	arr := []interface{}{
+		map[string]string{
+			"name": "wawan",
+		},
+		map[string]string{
+			"name": "dengkul",
+		},
+	}
+	return arr
+}
+
 func map_basic() map[string]string {
 	mp := map[string]string{
 		"name": "wawan",
@@ -22,6 +34,14 @@ func map_custom() map[string]interface{} {
 	mp := map[string]interface{}{
 		"name": "wawan",
 		"age":  22,
+	}
+	return mp
+}
+
+func map_with_slice() map[string][]string {
+	mp := map[string][]string{
+		"name": {"wawan", "lele"},
+		"age":  {"22", "81"},
 	}
 	return mp
 }
