@@ -1,6 +1,7 @@
 package main
 
 import (
+	"example/helper"
 	"fmt"
 	"strings"
 )
@@ -77,4 +78,10 @@ func main() {
 
 	// pointer
 	fmt.Println("pointer basic", pointer_basic())
+	fmt.Println()
+
+	// import package from other dir
+	// function dgn gaya snakeCase akan dianggap private method
+	// function dgn gaya CamelCase akan dianggap public method
+	fmt.Println(helper.Hello_Helper())
 }
