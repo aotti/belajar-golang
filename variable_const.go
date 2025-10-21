@@ -1,7 +1,7 @@
 package main
 
 func variableConst() (string, int8) {
-	var (
+	const (
 		name string = "wawan"
 		age  int8   = 22
 	)
