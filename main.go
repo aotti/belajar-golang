@@ -84,4 +84,6 @@ func main() {
 	// function dgn gaya snakeCase akan dianggap private method
 	// function dgn gaya CamelCase akan dianggap public method
 	fmt.Println(helper.Hello_Helper())
+	// regex
+	helper.Filter_String("seafood enak")
 }
